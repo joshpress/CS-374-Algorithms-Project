@@ -6,6 +6,8 @@ This project implements A* and Dijkstra’s Algorithm on OpenStreetMap data usin
 
 ## Driver File
 The driver file shows the outputs of the algorithms visualizes them. Uses `osmns`, `networkx`, `matplotlib`, `heapq` libraries.
+
+
 ## `shortest_path` file
 This file contains the `ShortestPath` class, which is used to build a `networkx` graph using a box. The constructor takes in starting and ending points, and buffer for the box around the points.
 ## Class Methods
@@ -32,3 +34,6 @@ Calculates shortest path between `start` and `end` using Dijkstra’s algorithm 
 * 	`displayRoute` 
 
 Displays shortest path route using matplotlib. Takes in `route`, `travel_time`, `explored` and `figsize` tuple to adjust for larger routes. Optional `explored` parameter is shown in yellow. The time taken in minutes is shown near the destination node.
+
+## Reference
+Boeing, G. (2025). [Modeling and Analyzing Urban Networks and Amenities with OSMnx](https://doi.org/10.1111/gean.70009). *Geographical Analysis* 57 (4), 567-577. doi:10.1111/gean.70009
